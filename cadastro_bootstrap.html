@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--PROVA DO JOSE NAVARRO E LUAN PRIETO-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Deixa e garante a responsividade em dispositivos-->
+    <title>Restaurante</title> <!-- Título da página  -->
+
+    <!-- Link para o arquivo CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark"> <!-- o fundo da página com a classe 'bg-primary' do Bootstrap, que coloca a cor preta no fundo -->
+    <!-- Container principal da página, com um fundo branco, margem no topo, bordas arredondadas e preenchimento interno -->
+    <div class="container bg-white mt-5 rounded p-3">
+        
+        <!-- Barra de navegação (Navbar) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded">
+            <!-- Titulo da lanchonete no menu -->
+            <a class="navbar-brand" href="#">Lanchonete do Zé e Luan</a>
+            
+            <!-- navega entre o menu -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span> <!-- hover de alternancia do menu-->
+            </button>
+
+            <!-- Itens do menu exibidos -->
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto"> <!-- margem automatica dos itens  -->
+                    <!-- Item do menu "Inicial" -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index_bootstrap.html">Inicial</a>
+                    </li>
+                    <!-- Item do menu "Horário de Funcionamento" -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="horario_bootstrap.html">Horário de Funcionamento</a>
+                    </li>
+                    <!-- Item do menu "Cadastro" -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro_bootstrap.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Linha do formulário de contato -->
+        <div class="row mt-4">
+            <div class="col"> <!-- Coluna que ocupa a largura total da linha -->
+                <h1>Formulario de Contato</h1>
+                <!-- Formulário que envia os dados -->
+                <form action="arquivo.php" method="post">
+                    <div class="form-row"> <!-- Organiza os campos do formulário em linhas -->
+                        <!-- Primeiro campo(ocupa 6 colunas em telas médias ou maiores) -->
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" class="form-control" type="text" /> <!-- Campo de texto para o nome -->
+                        </div>
+                        <!-- Segundo campo (também ocupa 6 colunas em telas médias ou maiores) -->
+                        <div class="form-group col-md-6">
+                            <label for="email">E-mail:</label>
+                            <input id="email" class="form-control" type="email" /> <!-- Campo de texto para o e-mail -->
+                        </div>
+                        <!-- Terceiro campo (ocupa metade da largura da tela) -->
+                        <div class="form-group col-6">
+                            <label for="telefone">Telefone:</label>
+                            <input id="telefone" class="form-control" type="text" /> <!-- Campo de texto para o telefone -->
+                        </div>
+                        <!-- Quarto campo (também ocupa metade da largura da tela) -->
+                        <div class="form-group col-6">
+                            <label for="Mensagem">Mensagem:</label>
+                            <input id="Mensagem" class="form-control" type="text" /> <!-- Campo de texto para a mensagem -->
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Botões para Enviar ou Excluir (Resetar o formulário) -->
+        <div class="form-group col-12">
+            <button type="submit" class="btn btn-success">Enviar</button> <!-- Botão para enviar o formulário, com a classe 'btn btn-success' para estilizar o botão com um fundo verde -->
+            <button type="reset" class="btn btn-danger">Limpar</button> <!-- Botão para resetar o formulário, com a classe 'btn btn-danger' para estilizar o botão com um fundo vermelho -->
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript para o funcionamento do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.js, necessário para alguns componentes interativos do Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk4U26EihhL6D6NedRYjp/6K7ujDz2Z4yM6arx"
+        crossorigin="anonymous"></script>
+    <!-- Script principal do Bootstrap para componentes interativos (pegamos no bootstrap.com.br) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

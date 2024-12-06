@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+    <!--PROVA DO JOSE NAVARRO E LUAN PRIETO-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Deixa e garante a responsividade em dispositivos-->
+    <title>Horário de Funcionamento</title> <!-- Título da página  -->
+
+    <!-- Link para o arquivo CSS  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark"> <!-- Define a cor de fundo do corpo da página com a classe 'bg-primary' do Bootstrap, que aplica uma cor preta  -->
+    <!-- Container principal que contém todo o conteúdo da página -->
+    <div class="container bg-white mt-5 rounded p-3">
+        <!-- Navbar (barra de navegação) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded"> <!-- Navbar com fundo vermelho, texto claro e bordas arredondadas -->
+            <a class="navbar-brand" href="#">Lanchonete do Zé e Luan</a> <!-- Nome da lanchonete, que é clicável e redireciona para a página inicial -->
+            
+            <!-- Botão de alternância do menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span> <!-- hover de alternancia do menu-->
+            </button>
+
+            <!-- Itens do menu de navegação -->
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto"> <!-- Lista de itens da barra de navegação -->
+                    <li class="nav-item active"> <!-- Item de navegação "Inicial" -->
+                        <a class="nav-link" href="index_bootstrap.html">Inicial</a>
+                    </li>
+                    <li class="nav-item"> <!-- Item de navegação "Horário de Funcionamento" -->
+                        <a class="nav-link" href="horario_bootstrap.html">Horário de Funcionamento</a>
+                    </li>
+                    <li class="nav-item"> <!-- Item de navegação "Cadastro" -->
+                        <a class="nav-link" href="cadastro_bootstrap.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Container secundário para o conteúdo da página -->
+        <div class="container mt-5">
+            <div class="row justify-content-center"> <!-- Linha com alinhamento centralizado -->
+                <div class="col-lg-8"> <!-- Coluna que ocupa 8/12 da largura da tela -->
+                    <div class="card shadow-sm"> <!--  box com sombra de fundo -->
+                        <div class="card-header bg-danger text-white text-center"> <!-- titulo do menu com fundo vermelho e texto branco -->
+                            <h4>HORÁRIO DE FUNCIONAMENTO</h4> <!-- Título centralizado dentro do menu -->
+                        </div>
+                        <div class="card-body"> <!-- dentro do menu que contém o conteúdo da tabela -->
+                            <table class="table table-striped table-bordered table-hover"> <!-- tabela com hover  -->
+                                <thead> <!-- Cabeçalho da tabela -->
+                                    <tr>
+                                        <th>Dias</th> <!-- Coluna para os dias da semana -->
+                                        <th>Horários</th> <!-- Coluna para os horários de funcionamento -->
+                                    </tr>
+                                </thead>
+                                <tbody> <!-- Corpo da tabela -->
+                                    <!-- Linha 1: Segunda-feira -->
+                                    <tr>
+                                        <td>Segunda-Feira</td>
+                                        <td>Das 8:00 até 17:00</td>
+                                    </tr>
+                                    <!-- Linha 2: Terça-feira -->
+                                    <tr>
+                                        <td>Terça-Feira</td>
+                                        <td>Das 8:00 até 17:00</td>
+                                    </tr>
+                                    <!-- Linha 3: Quarta-feira -->
+                                    <tr>
+                                        <td>Quarta-Feira</td>
+                                        <td>Das 8:00 até 17:00</td>
+                                    </tr>
+                                    <!-- Linha 4: Quinta-feira -->
+                                    <tr>
+                                        <td>Quinta-Feira</td>
+                                        <td>Das 8:00 até 17:00</td>
+                                    </tr>
+                                    <!-- Linha 5: Sexta-feira -->
+                                    <tr>
+                                        <td>Sexta-Feira</td>
+                                        <td>Das 8:00 até 17:00</td>
+                                    </tr>
+                                    <!-- Linha 6: Sábado -->
+                                    <tr>
+                                        <td>Sabádo</td>
+                                        <td>Das 8:00 até 12:00</td>
+                                    </tr>
+                                </tbody>
+                            </table> <!-- Fim da tabela -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Fim do container principal -->
+
+    <!-- Scripts JavaScript necessários para o funcionamento dos componentes interativos do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyZXEJ03RFOh78xwJ7fekffkryo3vq3a0yEZpdiRpWi6jx61msv2TZcIKv6k99Wb"
+        crossorigin="anonymous"></script> <!-- jQuery, necessário para alguns componentes do Bootstrap -->
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"
+        integrity="sha384-F3y5GddNK8lIQ+u6vU5dZfrF8aKCV2b0ed1jmj5s7iFSCq2W5mfJH2D0xH0ERZT0"
+        crossorigin="anonymous"></script> <!-- Script do Bootstrap que inclui Popper.js, necessário para a funcionalidade dos menus dropdown, modais e outros componentes interativos -->
+
+</html>

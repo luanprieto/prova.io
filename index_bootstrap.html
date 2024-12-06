@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+
+<head>
+    <!--PROVA DO JOSE NAVARRO E LUAN PRIETO-->
+    <meta charset="UTF-8"> 
+    
+    <!-- Deixa as telas responsivas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- O título da pagina que é exibida na aba -->
+    <title>Cardápio da Lanchonete</title>
+
+    <!-- Inclui o arquivo CSS de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+ <!-- Utilizamos o content "width" para garantir que sera responsivo para todas as telas -->
+  <!-- para usar as grids em HTML, usamos o col, row, navbar, section e container para nos ajudar a organizar e definirmos o tamanho
+   por exemplo utilizamos muitas vezes o tamanho das tabelas com col-6, ocupando metade da tabela por exemplo, mantendo o tamanho ideal 
+ das paginas   -->
+
+
+<body class="bg-dark"> <!-- deixa um fundo preto no corpo da página usando a classe 'bg-dark' do Bootstrap -->
+     
+    <!-- Container principal com fundo branco, margem superior e bordas arredondadas -->
+    <div class="container bg-white mt-5 rounded p-3 col-lg-8">
+        
+        <!-- Navbar (barra de navegação) -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded"> <!-- menu  com fundo vermelho, texto claro e bordas arredondadas -->
+            <a class="navbar-brand" href="#">Lanchonete do Zé e Luan</a> <!-- Nome da lanchonete -->
+            <!-- Botão de navegacao dentro do menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span> <!-- hover do menu -->
+            </button>
+
+            <!-- Itens de navegação no menu -->
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto"> <!-- Lista de itens de navegação -->
+                    <li class="nav-item active"> <!-- Item de navegação "Inicial" -->
+                        <a class="nav-link" href="index_bootstrap.html">Inicial</a>
+                    </li>
+                    <li class="nav-item"> <!-- Item de navegação "Horário de Funcionamento" -->
+                        <a class="nav-link" href="horario_bootstrap.html">Horário de Funcionamento</a>
+                    </li>
+                    <li class="nav-item"> <!-- Item de navegação "Cadastro" -->
+                        <a class="nav-link" href="cadastro_bootstrap.html">Cadastro</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Seção Hero (Apresentação Visual) -->
+<section class="hero-section">
+    <!-- Container centralizado que envolve o conteúdo da seção -->
+    <div class="container">
+        <!-- Título principal da página, utilizando a classe 'display-4' do Bootstrap para um tamanho grande de texto -->
+        <h2 class="display-4">Bem-vindo à Lanchonete do Zé e Luan!</h2>
+        
+        <!-- Subtítulo, utilizando a classe 'lead' do Bootstrap para um texto de destaque com fonte um pouco maior -->
+        <p class="lead">Sabor, qualidade e atendimento de primeira!</p>
+    </div>
+</section>
+
+<!-- Seção sobre a Lanchonete -->
+<section class="container mb-5">
+    <!-- Título da seção, centralizado com a classe 'text-center' e com margem inferior 'mb-4' -->
+    <h2 class="text-center mb-4">Sobre Nós</h2>
+
+    <!-- Parágrafo com descrição da lanchonete, também centralizado utilizando a classe 'text-center' -->
+    <p class="text-center">
+        A Lanchonete do Zé e Luan foi fundada com a missão de oferecer lanches deliciosos em um ambiente aconchegante e acolhedor. Seja para um rápido lanche ou para curtir com os amigos, temos opções para todos os gostos.
+    </p>
+</section>
+
+        
+        <!-- Título principal da página, centralizado e com margem inferior de 4 -->
+        <h1 class="text-center mb-4">Cardápio da Lanchonete</h1>
+
+        <!-- Seção para listar os Sanduíches com margem de 4 -->
+        <div class="row mb-4">
+            <div class="col-12"> <!-- Coluna que ocupa toda a largura disponível de 12-->
+                <h2>Sanduíches</h2> <!-- Título da seção -->
+                <!-- Lista de itens de sanduíches com a classe 'list-group' para um estilo visualmente agradável -->
+                <ul class="list-group">
+                    <!-- Cada item da lista tem um nome e um preço, usando 'd-flex' é usado para organizar os itens usando o flexbox container -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Hambúrguer Clássico
+                        <span class="badge bg-primary">R$ 15,00</span> <!-- Preço do item, com fundo azul  -->
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center"> <!-- Deixamos os itenis alinhados ao centro forçando com o justify  -->
+                        X-Burguer
+                        <span class="badge bg-primary">R$ 18,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Hot Dog
+                        <span class="badge bg-primary">R$ 12,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Seção para listar as Bebidas, usamos a margem de 4 com o margin bottom, o row para facilitar o posicionamento dentro da div -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2>Bebidas</h2> <!-- Título da seção -->
+                <ul class="list-group">
+                    <!-- Lista de itens de bebidas, com a mesma estrutura de flexbox container -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Refrigerante
+                        <span class="badge bg-primary">R$ 7,00</span> <!-- adicionamos um fundo azul no texto para diferenciar usando o badge -->
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Suco Natural
+                        <span class="badge bg-primary">R$ 6,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Água Mineral
+                        <span class="badge bg-primary">R$ 3,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Seção para listar as Sobremesas -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2>Sobremesas</h2> <!-- Título da seção -->
+                <ul class="list-group">
+                    <!-- Lista de sobremesas com o preço em formato de 'badge' -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Pudim
+                        <span class="badge bg-primary">R$ 8,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Brigadeiro
+                        <span class="badge bg-primary">R$ 5,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sorvete
+                        <span class="badge bg-primary">R$ 10,00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div> 
+
+    <!-- Inclui o script JavaScript do Bootstrap  -->
+    <!-- pegamos esse JS no site do bootstrap.com.br-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
